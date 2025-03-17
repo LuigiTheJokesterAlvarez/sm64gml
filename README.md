@@ -2,7 +2,7 @@
 Zbanack originally made this around 2020, it probably got a Cease and Desist from Nintendo so it got lost for 4 years, until a friend of crapbass uploaded it in a group chat.
 I'm just a person trying to fix this mess. My discord is `@luigithejokesterplus`
 
-This is extremely buggy, textures doesn't even load correctly, i'll try to fix that and more later.
+This is extremely buggy, i'll try to fix some bugs and try to optimize this.
 
 Original README Below:
 
