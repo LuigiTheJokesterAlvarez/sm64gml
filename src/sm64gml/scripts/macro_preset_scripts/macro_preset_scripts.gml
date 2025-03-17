@@ -43,10 +43,10 @@ function spawn_macro_objects(areaIndex, macroObjList) {
 
 	var at = 0;
     while (true) {
-        if (at >= array_length(macroObjList)) { // An encountered value of -1 means the list has ended.
+        if (at >= array_length(macroObjList) or macroObjList == undefined) { // An encountered value of -1 means the list has ended.
             break;
         }
-		
+		show_debug_message(macroObjList)
         presetID = (macroObjList[at][0] & 0x1FF) - 31; // @z added 10 for match??? // Preset identifier for MacroObjectPresets array
 
 		//log("PRESETID:", presetID);

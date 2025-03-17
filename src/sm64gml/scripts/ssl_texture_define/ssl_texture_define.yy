@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "ssl_texture_define",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "ssl",
     "path": "folders/Scripts/Levels/ssl.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ssl_texture_define",
-  "tags": [],
-  "resourceType": "GMScript",
 }

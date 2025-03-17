@@ -12,15 +12,7 @@ function sm64_h_macros_init() {
 	
 	parse_sm64_h();
 	
-	// Layers
-	#macro LAYER_FORCE             0
-	#macro LAYER_OPAQUE            1
-	#macro LAYER_OPAQUE_DECAL      2
-	#macro LAYER_OPAQUE_INTER      3
-	#macro LAYER_ALPHA             4
-	#macro LAYER_TRANSPARENT       5
-	#macro LAYER_TRANSPARENT_DECAL 6
-	#macro LAYER_TRANSPARENT_INTER 7
+	// Input
 
 	#macro INPUT_NONZERO_ANALOG         0x0001
 	#macro INPUT_A_PRESSED              0x0002

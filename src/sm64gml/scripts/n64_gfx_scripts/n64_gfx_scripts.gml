@@ -1041,7 +1041,7 @@ function sp_tri1(args) {
             import_texture(i);
             _rdp.textures_changed[i] = false;
         }
-			
+		/*
         var linear_filter = _rdp.other_mode_h[G_MDSFT_TEXTFILT] != 0;
 		
         if (linear_filter != rendering_state_textures[i].linear_filter ||
@@ -1055,6 +1055,7 @@ function sp_tri1(args) {
             rendering_state_textures[@ i].cmt = rdp_texture_tile.cmt;
 
         }
+		*/
 	}
 		
     var use_texture = used_textures[0] || used_textures[1];
@@ -1292,7 +1293,6 @@ function dp_texrect(args) {
 
 /// @function	run_dl
 function run_dl(_commands) {
-
 	var commands	= _commands.dl_arr;
 	var _len		= _commands.dl_size;
 	
@@ -1303,10 +1303,9 @@ function run_dl(_commands) {
 		var command, opcode;
 		command = commands[i];
 		opcode	= command[0];
-		
 		if (opcode == G_DL) {
-			
-			run_dl(command[1]);
+			if is_struct(command[1])
+				run_dl(command[1]);
 			
 		    if (command[2] == G_DL_PUSH) {
 				continue;

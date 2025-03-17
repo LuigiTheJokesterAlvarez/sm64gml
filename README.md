@@ -1,11 +1,10 @@
-# SOME BACKGROUND BEFORE THE JUICY BITS
+# STORY
+Zbanack originally made this around 2020, it probably got a Cease and Desist from Nintendo so it got lost for 4 years, until a friend of crapbass uploaded it in a group chat.
+I'm just a person trying to fix this mess. My discord is `@luigithejokesterplus`
 
-Hello! I reuploaded this repository. I d on't know the story from this, but I assume it was a private repository and it was taken down? Or maybe it was public and no one happened to grab a copy? This is a version that my friend sent me in a group chat. However, I cannot get it to compile without errors. It's from somewhere around 2020.
+This is extremely buggy, textures doesn't even load correctly, i'll try to fix that and more later.
 
-My Discord is `@crapbass`, feel free to DM me if you get it working or just for any reason.
-
-The original readme is below:
-
+Original README Below:
 
 # sm64.gml
 

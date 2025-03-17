@@ -1295,7 +1295,7 @@ function unused_set_camera_pitch_shake_env(shake) {
 	function create_camera(graphNode) {
 		
         var mode = graphNode.config.mode;
-
+		show_debug_message($"Breakthrough 2: {graphNode.focus}")
 		graphNode.config.camera = new ObjectDummy();
 		graphNode.config.camera.mode = mode;
 		graphNode.config.camera.defMode = mode;

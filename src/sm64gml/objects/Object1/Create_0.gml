@@ -8,7 +8,7 @@
 sm64_init(
 
 	// point to your decomp repo directory
-	"C:/Users/your/path/here/",
+	"C:/Users/path/to/sm64_decomp/",
 	
 	/**
 	 * Current somewhat-working levels:

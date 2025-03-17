@@ -42,8 +42,9 @@ boot("geo_layout_scripts_macros_init");
 /// @function	copy3argsToObject
 function copy3argsToObject(pos, argIndex, args) {
 	for (var i = argIndex; i < argIndex + 3; i++) {
-	    pos[@ array_length(pos)] = args[i];
+		array_push(pos, args[i])
 	}
+	show_debug_message($"POS: {pos}")
 	return 3;
 }
 
@@ -169,10 +170,12 @@ function node_camera(args) {
 	var argIndex = 1;
     argIndex	+= copy3argsToObject(pos, argIndex, args);
     argIndex	+= copy3argsToObject(focus, argIndex, args);
+	show_debug_message($"pOS: {pos} Focus: {focus}")
 		
     var graphNode = init_graph_node_camera(null, null, pos, focus, args[7], args[0]);
 
     register_scene_graph_node(Object1, graphNode);
+	array_push(gCurRootGraphNode.views, graphNode);
     gGeoViews[0] = graphNode;
 
     sCurrentLayout.index++;
@@ -330,16 +333,14 @@ function process_geo_layout(geoLayout) {
 
 	while (sCurrentLayout.index < array_length(sCurrentLayout.layout)) {
 	    var cmd = sCurrentLayout.layout[sCurrentLayout.index];
-
+		show_debug_message(cmd[0])
 		var _func = GCMD_JUMP_TABLE[cmd[0]];
 		
-		var _args = [];
+		var _args = array_create(0);
 		array_copy(_args, 0, cmd, 1, array_length(cmd)-1);
-			
 		_func(_args);
 
 	}
-
     return gCurRootGraphNode;
 
 }	

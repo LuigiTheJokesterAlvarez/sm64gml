@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "bob_coll_define",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "bob",
     "path": "folders/Scripts/Levels/bob.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bob_coll_define",
-  "tags": [],
-  "resourceType": "GMScript",
 }

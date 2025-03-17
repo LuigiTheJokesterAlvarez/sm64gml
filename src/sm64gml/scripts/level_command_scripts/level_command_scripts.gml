@@ -223,13 +223,11 @@ function lvl_cmd_begin_area(args) {
 		
     if (areaIndex < 8) {
         var screenArea = process_geo_layout(geoLayout);
-			
         sCurrAreaIndex = areaIndex;
 			
         screenArea.areaIndex = areaIndex;
 			
         gAreas[areaIndex].geometryLayoutData = screenArea;
-			
         if (screenArea.views[0]!=null) {
             gAreas[areaIndex].camera = screenArea.views[0].config.camera;
         } else {
@@ -330,7 +328,7 @@ function level_script_execute() {
         cmd = cur.commands[cur.index];
 		fnc = LevelScriptJumpTable[cmd[0]];
 		fnc(cmd);	
-}
+	}
 
     rsp_init();
     rdp_init();

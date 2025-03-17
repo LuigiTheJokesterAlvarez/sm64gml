@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "actor_spindrift_init",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "spindrift",
     "path": "folders/Scripts/Actors/spindrift.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "actor_spindrift_init",
-  "tags": [],
-  "resourceType": "GMScript",
 }
